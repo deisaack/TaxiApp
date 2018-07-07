@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import Home from "../components/Home";
 import {
-    setName
+    setName, setAge
 } from "../modules/home";
 
 const mapStateToProps = (state) => ({
@@ -10,6 +10,6 @@ const mapStateToProps = (state) => ({
 });
 
 const mapActionCreators = {
-    setName
+    setName, setAge
 };
 export default connect(mapStateToProps, mapActionCreators)(Home);
